@@ -1,0 +1,32 @@
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+th,
+td,
+table {
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  background-color: lightslategray;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.carrousel {
+  margin: 100px;
+}
+
