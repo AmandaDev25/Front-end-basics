@@ -8,8 +8,9 @@ export default function Context() {
 
   return (
     <UserContext.Provider value={user}>
-      <p>O Use Context é um gerenciamento de estado globalmente. Vamos ver um exemplo com todos os h1 logo abaixo</p>
-      <h1>{user}</h1>
+      <img src="/public/hooks.png" alt="Hooks" height={80} />
+      <p>O Use Context é um gerenciamento de estado globalmente. Vamos ver um exemplo com todos os paragrafos logo abaixo</p>
+      <p>{user}</p>
       <Component2 />
     </UserContext.Provider>
   );
@@ -18,7 +19,7 @@ export default function Context() {
 function Component2() {
   return (
     <>
-      <h2>Component 2</h2>
+      <p>Component 2</p>
       <Component3 />
     </>
   );
@@ -27,7 +28,7 @@ function Component2() {
 function Component3() {
   return (
     <>
-      <h3>Component 3</h3>
+      <p>Component 3</p>
       <Component4 />
     </>
   );
@@ -36,7 +37,7 @@ function Component3() {
 function Component4() {
   return (
     <>
-      <h4>Component 4</h4>
+      <p>Component 4</p>
       <Component5 />
     </>
   );
@@ -47,9 +48,9 @@ function Component5() {
 
   return (
     <>
-      <div style={{ height: '100px' }}>
-        <h5>Component 5</h5>
-        <h6>{`${user} again!`}</h6>
+      <div style={{ height: '150px' }}>
+        <p>Component 5</p>
+        <p>{`${user} again!`}</p>
       </div>
     </>
   );

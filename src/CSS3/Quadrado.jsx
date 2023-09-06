@@ -1,7 +1,7 @@
 export default function Quadrado() {
     return (
         <>
-            <div class="flex-container">
+            <div className="flex-container">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>

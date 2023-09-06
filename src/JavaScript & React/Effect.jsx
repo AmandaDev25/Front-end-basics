@@ -11,7 +11,8 @@ export default function Effect() {
 
   return (
     <>
-      <div style={{ height: '300px' }}>
+      <div style={{ height: '400px' }}>
+      <img src="/public/hooks.png" alt="Hooks" height={80} />
         <p> O Use Effect executa o ação da aplicação. Vamos ver um exemplo com números logo abaixo</p>
         <h4>Use Effect</h4>
         <p>Count: {count}</p>
