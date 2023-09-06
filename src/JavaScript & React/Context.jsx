@@ -1,13 +1,14 @@
 import { useState, createContext, useContext } from "react";
 
-
 const UserContext = createContext();
 
- export default function Context() {
+export default function Context() {
+
   const [user, setUser] = useState("Use Context");
 
   return (
     <UserContext.Provider value={user}>
+      <p>O Use Context é um gerenciamento de estado globalmente. Vamos ver um exemplo com todos os h1 logo abaixo</p>
       <h1>{user}</h1>
       <Component2 />
     </UserContext.Provider>
@@ -17,7 +18,6 @@ const UserContext = createContext();
 function Component2() {
   return (
     <>
-
       <h2>Component 2</h2>
       <Component3 />
     </>
@@ -47,8 +47,10 @@ function Component5() {
 
   return (
     <>
-      <h5>Component 5</h5>
-      <h6>{`${user} again!`}</h6>
+      <div style={{ height: '100px' }}>
+        <h5>Component 5</h5>
+        <h6>{`${user} again!`}</h6>
+      </div>
     </>
   );
 }

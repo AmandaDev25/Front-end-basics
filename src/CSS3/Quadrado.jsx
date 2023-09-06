@@ -8,6 +8,7 @@ export default function Quadrado() {
                 <div>4</div>
                 <div>5</div>
                 <div>6</div>
+                <div>7</div>
             </div>
             <h4>
                 Um layout flexível deve ter um elemento pai com a propriedade display definida como flex .
